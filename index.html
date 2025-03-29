@@ -312,27 +312,27 @@ function toggleLanguage() {
         document.getElementById('download-btn').textContent = messages[selectedLang].downloadButton;
         document.getElementById('edit-btn').textContent = messages[selectedLang].editButton;
 
-        function validateInput() {
-    let input = document.getElementById("username").value;
-    let arabicRegex = /^[\u0600-\u06FF\s]+$/; // يسمح فقط بالأحرف العربية
-    let englishRegex = /^[A-Za-z\s]+$/; // يسمح فقط بالأحرف الإنجليزية
+//         function validateInput() {
+//     let input = document.getElementById("username").value;
+//     let arabicRegex = /^[\u0600-\u06FF\s]+$/; // يسمح فقط بالأحرف العربية
+//     let englishRegex = /^[A-Za-z\s]+$/; // يسمح فقط بالأحرف الإنجليزية
 
-    if (lang === "ar" && !arabicRegex.test(input)) {
-        document.getElementById("username").value = input.replace(/[^ \u0600-\u06FF]/g, '');
-        Swal.fire({
-            icon: 'warning',
-            title: messages[lang].warningTitle,
-            text: messages[lang].warningText
-        });
-    } else if (lang === "en" && !englishRegex.test(input)) {
-        document.getElementById("username").value = input.replace(/[^A-Za-z\s]/g, '');
-        Swal.fire({
-            icon: 'warning',
-            title: messages[lang].warningTitle,
-            text: messages[lang].warningText
-        });
-    }
-}
+//     if (lang === "ar" && !arabicRegex.test(input)) {
+//         document.getElementById("username").value = input.replace(/[^ \u0600-\u06FF]/g, '');
+//         Swal.fire({
+//             icon: 'warning',
+//             title: messages[lang].warningTitle,
+//             text: messages[lang].warningText
+//         });
+//     } else if (lang === "en" && !englishRegex.test(input)) {
+//         document.getElementById("username").value = input.replace(/[^A-Za-z\s]/g, '');
+//         Swal.fire({
+//             icon: 'warning',
+//             title: messages[lang].warningTitle,
+//             text: messages[lang].warningText
+//         });
+//     }
+// }
 
 
         function generateCard() {
