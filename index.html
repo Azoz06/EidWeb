@@ -182,10 +182,6 @@
     </div>
 
     <!-- onclick="toggleLanguage()" -->
-      <a href="503.html">
-
-         <button class="lang-switch" id="lang-switch-button">English</button>
-     </a> 
 
     <div class="container" id="form-container">
         <h1 id="title"></h1>
@@ -271,7 +267,7 @@ function updatePageText(lang) {
     document.getElementById('submit-btn').textContent = messages[lang].submitButton;
     document.getElementById('download-btn').textContent = messages[lang].downloadButton;
     document.getElementById('edit-btn').textContent = messages[lang].editButton;
-    document.querySelector('.lang-switch').textContent = messages[lang].langButton;
+    // document.querySelector('.lang-switch').textContent = messages[lang].langButton;
     document.getElementById('footer-text').textContent = messages[lang].footerText;
     
     // تغيير الصورة بناءً على اللغة
